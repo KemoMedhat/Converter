@@ -1,4 +1,5 @@
 # you need to install PySimpleGUI Before you can run 
+# the part with mach statement needs python 3.11 or newer but it works with older versions in the rest of the code
 import PySimpleGUI as sg   #importing the main lib and namming it as sg
 layout = [[sg.Input(key='-input-',enable_events=True),sg.Spin(['KG-->G','M-->CM','GB-->MB','MG-->KB'],enable_events=True,key='-spn-')],
           [sg.Text('    kareem      ',key='txt',enable_events=True),sg.Button('Convert',key='-btn-')]]
