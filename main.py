@@ -5,11 +5,9 @@ layout = [
     [sg.Input('hee',enable_events=True,key="-inp-")],
     ]    # splitting the window to three columns and putting wideget or element in avery one of it
 window = sg.Window('Converter',layout)
-conter = 0
 while True:
-    event, values = window.read()
-
+    event, value = window.read()
     if event == sg.WIN_CLOSED:
-        break
+          break
 
     
